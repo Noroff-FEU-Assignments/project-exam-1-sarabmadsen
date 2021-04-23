@@ -1,0 +1,30 @@
+/*Global styles*/
+
+body {
+  margin: 0;
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #111a26;
+}
+
+/*Mobile and tablet styles*/
+@media only screen and (max-width: 834px) {
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 835px) {
+  main h1 {
+    color: #99b4bf;
+    font-size: 35px;
+  }
+  main h2 {
+    color: #99b4bf;
+    font-size: 30px;
+  }
+  main p {
+    color: #99b4bf;
+    font-size: 20px;
+  }
+}
