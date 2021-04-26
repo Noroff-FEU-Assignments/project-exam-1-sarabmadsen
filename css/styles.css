@@ -5,26 +5,106 @@ body {
   font-family: "Century Gothic", Arial, Helvetica, sans-serif;
 }
 
+header {
+  padding: 0;
+  margin: -5px;
+}
+
+.navigation {
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  font-size: 25px;
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #111a26;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.space-menu {
+  margin: 0 auto;
+}
+
+.search-field {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #111a26;
+  border: #111a26 solid 1px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.search-symbol {
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  color: #111a26;
+  font-size: 25px;
+}
+
 main {
   background-color: #111a26;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  color: #99b4bf;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 {
+  color: #99b4bf;
+  text-align: center;
+}
+
+p {
+  color: #99b4bf;
 }
 
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
+  nav,
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
 }
 
 /*Desktop styles*/
 @media only screen and (min-width: 835px) {
-  main h1 {
-    color: #99b4bf;
+  h1 {
     font-size: 35px;
   }
-  main h2 {
-    color: #99b4bf;
+  h2 {
     font-size: 30px;
   }
-  main p {
-    color: #99b4bf;
+  p {
     font-size: 20px;
+  }
+  .hamburger-label,
+  #hamburger-menu {
+    display: none;
   }
 }

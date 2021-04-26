@@ -1,8 +1,12 @@
 /*Global styles*/
 
+header img {
+  max-width: 2000px;
+  width: 100%;
+}
+
 header {
-  background-image: url("../images/header_photo.jpg");
-  background-color: white;
+  position: relative;
 }
 
 /*Mobile and tablet styles*/
