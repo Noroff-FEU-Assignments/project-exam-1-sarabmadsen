@@ -1,12 +1,14 @@
 /*Global styles*/
 
-header img {
-  max-width: 2000px;
-  width: 100%;
+.navigation {
+  background: rgba(255, 255, 255, 0.6);
 }
 
-header {
-  position: relative;
+.main-text {
+  max-width: 700px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*Mobile and tablet styles*/
