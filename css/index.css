@@ -6,9 +6,8 @@
 
 .main-text {
   max-width: 700px;
-  height: 300px;
   text-align: center;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 /*Mobile and tablet styles*/
