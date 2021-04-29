@@ -33,12 +33,49 @@
             <img class="footer-header" src="images/header_image1.jpg" alt="Glacier">
         </header>
         <main>
-            <h1>About</h1>
-            <p class="main-text">
-                This blog is about our wedding at the East Coast of Svalbard
-                 the 6th of March 2021. The blog is my Project Exam in my 
-                 front-end studies at Noroff. I hope you enjoy!
-            </p>
+            <p class="nav-text">You are here: <a href="index.html">Home</a> - Contact</p>
+            <h1>Contact</h1>
+            <div class="main-content">
+                <form action="form-success.php" method="POST">
+                    <fieldset>
+                        <div class="sentMessage">Your message has been sent!</div>
+                        <div>
+                            <label for="name">Full name*</label>
+                            <input type="text" name="name" id="name" class="form__input"/>
+                            <div class="form-error" id="nameError">Please enter your full name</div>
+                        </div>
+                        <div>
+                            <label for="email">Email address*</label>
+                            <input type="email" name="email" id="email" class="form__input"/>
+                            <div class="form-error" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        <div>
+                            <label for="subject">Write your subject here*</label>
+                            <input type="text" id="subject" name="subject" class="form__input"></input>
+                            <div class="form-error" id="subjectError">Please enter a subject</div>
+                        </div>
+                        <div>
+                            <label for="message">Write your message here*</label>
+                            <textarea id="message" name="message" rows="5" cols="30" class="form__input"></textarea>
+                            <div class="form-error" id="messageError">Please enter a message</div>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="accept" name="accept" value="accept"/>
+                            <label for="accept">I accept the terms & conditions*</label>
+                            <div class="form-error" id="checkboxError">Please accept our terms & conditions</div>
+                        </div>
+                        <input class="button" type="submit" value="Send" />
+                    </fieldset>
+                </form>
+                <div class="content-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <img src="images/contact.jpg" alt="inreach garmin">
+                </div>
+            </div>
         </main>
         <footer>
             <div class="footer-content">

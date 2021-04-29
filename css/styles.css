@@ -102,6 +102,26 @@ p {
   color: #99b4bf;
 }
 
+button,
+.button {
+  background-color: #d9895b;
+  color: #111a26;
+  font-weight: bold;
+  max-width: 90px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+.nav-text a {
+  color: #99b4bf;
+}
+
+.nav-text {
+  margin-top: 0;
+}
+
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
   h1 {
@@ -194,5 +214,25 @@ p {
     left: 50%;
     max-width: 400px;
     width: 100%;
+  }
+  .nav-text a:hover {
+    font-weight: bold;
+  }
+  .search-field:hover {
+    border: #d9895b solid 3px;
+    margin-bottom: 1px;
+  }
+  i:hover {
+    color: #d9895b;
+  }
+  li a:hover {
+    color: #d9895b;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #99b4bf;
+  }
+  .button:hover {
+    background-color: #99b4bf;
   }
 }
