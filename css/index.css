@@ -22,10 +22,13 @@ main p {
 
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
-  .results-container {
+  .blog-carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  main i {
+    padding: 1rem;
   }
 }
 
