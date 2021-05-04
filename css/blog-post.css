@@ -20,6 +20,11 @@ main img {
 
 .text {
   max-width: 700px;
+  margin-top: 0;
+}
+
+.text p {
+  margin-top: 0;
 }
 
 figure {

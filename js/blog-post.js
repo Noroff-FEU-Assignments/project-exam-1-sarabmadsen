@@ -24,10 +24,7 @@ async function fetchPost() {
         });
 
         const content = results.content.rendered
-            .match(/<p>(.*?)<\/p>/g)
-            .map((string) => {
-                return string.replace(/<\/?p>/g, "");
-            });
+            .match(/<p>(.*?)<\/p>/g);
 
 
         title.innerHTML += `${results.title.rendered} | Wedding Blog`;
@@ -36,7 +33,7 @@ async function fetchPost() {
         resultsContainer.innerHTML = `<div class="main-content"><img src="${results._embedded["wp:featuredmedia"][0].source_url}" 
                                     alt="${results._embedded["wp:featuredmedia"][0].alt_text}" />
                                     <div class="text"><p>${formatDate}</p>
-                                    <p>${content}</p>
+                                    ${content}
                                     </div></div>
                                     <div class="image-gallery">${results.content.rendered}</div>`
 
