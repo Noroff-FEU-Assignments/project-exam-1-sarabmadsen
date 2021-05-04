@@ -39,12 +39,11 @@ async function fetchApi(url) {
             });
 
             resultsContainer.innerHTML += 
-                `<div class="post"><img src="${results[i]._embedded["wp:featuredmedia"][0].source_url}" 
-                alt="${results[i]._embedded["wp:featuredmedia"][0].alt_text}" />
-                <h3>${results[i].title.rendered}</h3>
+                `<div class="post"><a href="blog-post.html?id=${results[i].id}"><img src="${results[i]._embedded["wp:featuredmedia"][0].source_url}" 
+                alt="${results[i]._embedded["wp:featuredmedia"][0].alt_text}" /></a>
+                <a href="blog-post.html?id=${results[i].id}"><h3>${results[i].title.rendered}</h3></a>
                 <p>${formatDate}</p></div>`
 
-                
         }
         
 

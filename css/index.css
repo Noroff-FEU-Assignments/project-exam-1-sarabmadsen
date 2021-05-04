@@ -20,6 +20,14 @@ main p {
   text-align: center;
 }
 
+main a {
+  text-decoration: none;
+}
+
+.results-container {
+  min-height: 5rem;
+}
+
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
   .blog-carousel {
