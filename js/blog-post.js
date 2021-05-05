@@ -37,6 +37,25 @@ async function fetchPost() {
                                     </div></div>
                                     <div class="image-gallery">${results.content.rendered}</div>`
 
+        
+        const images = document.querySelectorAll("figure img");
+        const overlay = document.querySelector(".modal-overlay");
+        const modal = document.querySelector(".modal");
+
+        for(let i = 0; i < images.length; i++) {
+            console.log(images[i].className);
+
+            images[i].onclick = function() {
+                event.target.classList.add("modal");
+                overlay.style.display = "block";
+
+                overlay.onclick = function() {
+                    images[i].classList.remove("modal");
+                    overlay.style.display = "none";
+                }
+            }
+        }
+
     } catch(error) {
         console.log(error)
         resultsContainer.innerHTML = error;
@@ -44,3 +63,8 @@ async function fetchPost() {
 }
 
 fetchPost();
+
+
+
+
+

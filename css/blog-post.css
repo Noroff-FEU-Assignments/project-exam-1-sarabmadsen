@@ -41,6 +41,35 @@ figure {
   padding: 0.5rem;
 }
 
+figure img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  z-index: 1010;
+}
+
+.modal-overlay {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 26, 38, 0.8);
+  display: none;
+}
+
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
   .image-gallery {
@@ -70,10 +99,5 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .image-gallery img {
-    max-width: 300px;
-    max-height: 200px;
-    object-fit: cover;
   }
 }
