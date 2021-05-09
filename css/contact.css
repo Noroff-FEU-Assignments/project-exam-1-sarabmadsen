@@ -18,14 +18,15 @@ main p {
 }
 
 form {
-  color: #111a26;
+  color: #99b4bf;
   max-width: 600px;
   margin-top: 1.5rem;
 }
 
 fieldset {
   border: none;
-  background-color: #99b4bf;
+  background-color: #111a26;
+  border: #99b4bf solid 2px;
   border-radius: 20px;
   padding: 1.5rem;
   display: flex;
@@ -38,26 +39,31 @@ form div {
 
 .form__input {
   display: block;
+  width: 100%;
 }
 
 .form-error {
-  color: #111a26;
+  color: #d9895b;
   font-weight: bold;
   display: none;
 }
 
 .sentMessage {
   color: #111a26;
+  background-color: #99b4bf;
   font-weight: bold;
   display: none;
 }
 
-.button {
-  border: 1px solid #111a26;
+textarea {
+  width: 100%;
 }
 
 /*Mobile and tablet styles*/
 @media only screen and (max-width: 834px) {
+  form {
+    font-size: 0.9rem;
+  }
 }
 
 /*Desktop styles*/
@@ -67,5 +73,6 @@ form div {
   }
   form {
     margin-right: 1rem;
+    font-size: 1.2rem;
   }
 }

@@ -55,4 +55,7 @@ main a {
     margin-bottom: 5rem;
     padding: 1rem;
   }
+  .post {
+    padding: 1rem;
+  }
 }
